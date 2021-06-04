@@ -3,7 +3,7 @@
 ## 
 import discord
 from discord.ext import commands
-from SheriAPI import SheriAPI
+import requests
 HEADERS = {'user-agent': 'RedsHeadPatBot/1.3.0'}
 class animalimages(commands.Cog):
     """Animal Images"""
@@ -42,11 +42,14 @@ class animalimages(commands.Cog):
         await ctx.send(embed=await getsheimage(str('husky')))
 ## Api Function
 async def getsheimage(kind):
-  sapi = SheriAPI()
-  imageres = await sapi.get(kind)
-  embed=discord.Embed(title=str(kind) + "!", description="[Direct Link to image on API]("+ imageres.url + ")\n" + "[Report Image to API Devs](" + imageres.report_url + ")")
+  url = "https://sheri.bot/api/" + kind + "/"
+  r = requests.get(apirequesturl)
+  answer = r.json()
+  imageurl = answer["url"]
+  imagereport = answer["report_url"]
+  embed=discord.Embed(title=str(kind) + "!", description="[Direct Link to image on API]("+ imageurl + ")\n" + "[Report Image to API Devs](" + imagereport + ")")
   # Set the image
-  embed.set_image(url=imageres.url)
+  embed.set_image(url=imageurl)
   # API Credit
   embed.set_footer(text="Powered by the Sheri Blossom API!")
   return embed
