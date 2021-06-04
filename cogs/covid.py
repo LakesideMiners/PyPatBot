@@ -3,8 +3,7 @@ import requests
 from discord.ext import commands
 import os
 from datetime import datetime
-from dotenv import load_dotenv
-load_dotenv()
+
 apikey = os.environ.get("x_rapidapi_key")
 headers = {
   'x-rapidapi-key' : apikey,
