@@ -1,9 +1,10 @@
 import discord
+import OS
 from discord.ext import commands
 import requests #Imports the requests library
 import random #Imports the random library
 USERAGENTSTRING = os.environ.get("UA")
-HEADERS = {'user-agent': USERAGENTSTRING} ## CHANGE WHEN FORKING
+HEADERS = {'user-agent': USERAGENTSTRING}
 class headpat(commands.Cog):
     """Head Pats!"""
     
