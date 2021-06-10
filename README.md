@@ -1,11 +1,11 @@
 # pypatbot
-
+Please note that the adminstuff cog is not working and thus is disabled.
 ## Dependices
 ```poetry```
 
 ```python3```
 
-Poetry will handle the installing of all of the needed python libaries 
+Poetry will handle the installing of all of needed python libaries 
 
 # Stuff to do first
 Get a bot token from discord's dev portal. There are many tutorals online that can help you with that.
@@ -15,26 +15,29 @@ https://rapidapi.com/Gramzivi/api/covid-19-data
 make sure to record your API key.
 
 ## Disabling HeadPat Command!
-If you want to disable the headpat command, you can add your server ID to the HeadPadoff file.
+If you want to disable the headpat command, you can add your server ID to the HeadPadoff file after cloning.
 
-## Installing/Cloning
+## Installing
 I am assuming you are runninng this on Linux.
 You will need Potery and python3 installed. I assume you already have python3 installed. To install poetry, run the below command. 
 ```curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3```
 
 then. clone the repo.
 ```git clone https://github.com/LakesideMiners/pypatbot.git```
-then cd into the folder
-```cd pypatbot```
-next, set up your env vars.
 
-```cd cogs```
-then
-```poetry install```
+then cd into the folder
+
+```cd pypatbot```
+
+next, set up your env vars as explained below.
+
 # Setting Up The API Strings And Reddit Useragent
-Create a file named ".env" 
+Create a file named ".env" in the ```pypatbot``` folder
+
 ```nano .env```
+
 paste the below text into the file
+
 ```
 DISCORD_BOT_SECRET="aaa"
 x_rapidapi_key="bbb"
