@@ -41,14 +41,20 @@ x_rapidapi_key="bbb"
 UA="CCCBot\d.d.d"
 ```
 replacing ```aaa``` with your bot token
+
 replacing ```bbb``` with your rapidapi token
+
 Repacling ```CCC``` with a short name that will be used as the bots useragent for the Reddit API
+
 and ```d.d.d``` with a version number. e.g 1.3.0
+
 MAKE SURE TO INCLUDE THE QUOTES
+
 Save the file. 
 
 ## Inviting to your server
 There is a section on your bots page on the discord dev portal to create a URL to invite your bot, right now, you need to give it the abaitly to send and read messages. as well as use embeds. 
+
 ## Running
 In the folder with main.py. run
 
