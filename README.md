@@ -2,7 +2,10 @@
 
 ## Dependices
 ```poetry```
+
 ```python3```
+
+Poetry will handle the installing of all of the needed python libaries 
 
 # Stuff to do first
 Get a bot token from discord's dev portal. There are many tutorals online that can help you with that.
