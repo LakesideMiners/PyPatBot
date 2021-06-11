@@ -8,11 +8,15 @@ Please note that the adminstuff cog is not working and thus is disabled.
 Poetry will handle the installing of all of needed python libaries 
 
 # Stuff to do first
-Get a bot token from discord's dev portal. There are many tutorals online that can help you with that.
+GCreate a new app at the dev portal, and then create a bot and get the token.
+https://discord.com/developers/applications/
 
 Sign Up for a RapidAPI account and sign up for whatever plan you want for the below API
+
 https://rapidapi.com/Gramzivi/api/covid-19-data
+
 make sure to record your API key.
+
 
 ## Disabling HeadPat Command!
 If you want to disable the headpat command, you can add your server ID to the HeadPadoff file after cloning.
