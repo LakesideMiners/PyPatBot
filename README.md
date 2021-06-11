@@ -60,10 +60,24 @@ MAKE SURE TO INCLUDE THE QUOTES
 Save the file. 
 
 ## Inviting to your server
-There is a section on your bots page on the discord dev portal to create a URL to invite your bot, right now, you need to give it the abaitly to send and read messages. as well as use embeds. 
+There is a section in the discord dev portal for your app labed OAuth2. click it, then for scope, click "bot"
+then scroll down and check 
+```
+View Channels
+
+Send Messages
+
+Embed Links
+
+Attach Files
+
+Use External Emojis
+```
+
+then, copy and paste the link it gives you into your web browser. then follow the instructions given.
 
 ## Running
-In the folder with main.py. run
+In the folder with main.py. r
 
 ```poetry run python main.py```
 
